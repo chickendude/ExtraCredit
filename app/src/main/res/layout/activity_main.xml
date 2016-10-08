@@ -14,5 +14,45 @@
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Hello World!"/>
+		android:text="Welcome to the Extra Credit app!"
+		android:textSize="34sp"
+		android:textAlignment="center"
+		android:id="@+id/textView"/>
+
+	<TextView
+		android:text="Which app would you like to try? "
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textView"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="108dp"
+		android:id="@+id/textView2"
+		android:textSize="24sp"/>
+
+	<Button
+		android:text="Age"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/ageButton"
+		style="@style/Widget.AppCompat.Button.Colored"/>
+
+	<Button
+		android:text="Fake Login"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/ageButton"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/fakeLoginButton"
+		style="@style/Widget.AppCompat.Button.Colored"/>
+
+	<Button
+		android:text="Favorite Color"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/fakeLoginButton"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/favoriteColorButton"
+		style="@style/Widget.AppCompat.Button.Colored"/>
 </RelativeLayout>
