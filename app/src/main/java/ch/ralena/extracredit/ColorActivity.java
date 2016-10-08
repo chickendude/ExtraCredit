@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -13,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ColorActivity extends AppCompatActivity {
+	public static final String TAG = ColorActivity.class.getSimpleName();
+
 	List<ch.ralena.extracredit.model.Color> mColorList = new ArrayList<>();
 
 	private final static String COLORS = "Red//f44336," +
@@ -32,7 +35,10 @@ public class ColorActivity extends AppCompatActivity {
 			"Orange//ff9800," +
 			"Deep Orange//ff5722," +
 			"Brown//795548," +
-			"Grey//9e9e9e";
+			"Grey//9e9e9e," +
+			"Blue Grey//607d8b," +
+			"Black//000000," +
+			"White//ffffff";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +57,12 @@ public class ColorActivity extends AppCompatActivity {
 		for (ch.ralena.extracredit.model.Color color : mColorList) {
 			Button button = new Button(this);
 			button.setText(color.getColorName());
-			button.setTextColor(Color.parseColor(color.getColorValue()));
-			button.setBackgroundColor(0xFFFFFFFF);
+			String textColor = color.getColorValue();
+			button.setTextColor(Color.parseColor(textColor));
+			if (textColor.toLowerCase().equals("#ffffffff")) {
+				button.setBackgroundColor(0xFFe0e0e0);
+			} else
+				button.setBackgroundColor(0xFFFFFFFF);
 			button.setId(i++);
 			button.setOnClickListener(new View.OnClickListener() {
 				@Override
