@@ -11,4 +11,23 @@
 	android:paddingTop="@dimen/activity_vertical_margin"
 	tools:context="ch.ralena.extracredit.ColorActivity">
 
+	<TextView
+		android:text="What's your favorite color?"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/textView3"
+		android:textSize="34sp"
+		android:textAlignment="center"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/linearLayout"
+		android:layout_below="@+id/textView3"
+		android:layout_alignParentStart="true">
+	</LinearLayout>
+
 </RelativeLayout>
