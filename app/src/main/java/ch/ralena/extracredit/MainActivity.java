@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-	// TODO: ask user for their favorite color and show it to them
+	// DONE: ask user for their favorite color and show it to them
 	// TODO: design fake login screen and log them in fakely
 	// TODO: ask user to input age in years then show age in days, weeks, months, etc.
 

@@ -33,9 +33,18 @@
 				android:name="android.support.PARENT_ACTIVITY"
 				android:value="ch.ralena.extracredit.MainActivity"/>
 		</activity>
-		<activity android:name=".AgeActivity"
-				  android:label="Age"
-				  android:parentActivityName=".MainActivity"
+		<activity
+			android:name=".AgeActivity"
+			android:label="Age"
+			android:parentActivityName=".MainActivity"
+			android:theme="@style/AppTheme">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="ch.ralena.extracredit.MainActivity"/>
+		</activity>
+		<activity android:name=".ColorResultsActivity"
+				  android:label="Color Results"
+				  android:parentActivityName=".ColorActivity"
 				  android:theme="@style/AppTheme">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
