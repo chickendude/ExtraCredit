@@ -42,13 +42,22 @@
 				android:name="android.support.PARENT_ACTIVITY"
 				android:value="ch.ralena.extracredit.MainActivity"/>
 		</activity>
-		<activity android:name=".ColorResultsActivity"
-				  android:label="Color Results"
-				  android:parentActivityName=".ColorActivity"
-				  android:theme="@style/AppTheme">
+		<activity
+			android:name=".ColorResultsActivity"
+			android:label="Color Results"
+			android:parentActivityName=".ColorActivity"
+			android:theme="@style/AppTheme">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
 				android:value="ch.ralena.extracredit.MainActivity"/>
+		</activity>
+		<activity android:name=".FakeLoginResultsActivity"
+				  android:label="Fake Login Results"
+				  android:parentActivityName=".FakeLoginActivity"
+				  android:theme="@style/AppTheme">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="ch.ralena.extracredit.FakeLoginActivity"/>
 		</activity>
 	</application>
 
