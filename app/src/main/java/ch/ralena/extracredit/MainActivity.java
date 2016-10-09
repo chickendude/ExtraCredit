@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 	// DONE: ask user for their favorite color and show it to them
-	// TODO: design fake login screen and log them in fakely
+	// DONE: design fake login screen and log them in fakely
 	// TODO: ask user to input age in years then show age in days, weeks, months, etc.
 
 	private Button mFavoriteColorButton, mFakeLoginButton, mAgeButton;

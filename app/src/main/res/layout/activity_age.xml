@@ -11,4 +11,31 @@
 	android:paddingTop="@dimen/activity_vertical_margin"
 	tools:context="ch.ralena.extracredit.AgeActivity">
 
+	<EditText
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:inputType="number"
+		android:ems="10"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/ageEditText"/>
+
+	<TextView
+		android:text="Please enter your age in years"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView6"
+		android:textSize="36sp"
+		android:textAlignment="center"
+		android:layout_above="@+id/ageEditText"
+		android:layout_alignParentStart="true"/>
+
+	<Button
+		android:text="Button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/ageCalculateButton"
+		style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
 </RelativeLayout>

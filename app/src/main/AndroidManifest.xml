@@ -51,13 +51,22 @@
 				android:name="android.support.PARENT_ACTIVITY"
 				android:value="ch.ralena.extracredit.MainActivity"/>
 		</activity>
-		<activity android:name=".FakeLoginResultsActivity"
-				  android:label="Fake Login Results"
-				  android:parentActivityName=".FakeLoginActivity"
-				  android:theme="@style/AppTheme">
+		<activity
+			android:name=".FakeLoginResultsActivity"
+			android:label="Fake Login Results"
+			android:parentActivityName=".FakeLoginActivity"
+			android:theme="@style/AppTheme">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
 				android:value="ch.ralena.extracredit.FakeLoginActivity"/>
+		</activity>
+		<activity android:name=".AgeResultsActivity"
+				  android:label="Age Results"
+				  android:parentActivityName=".AgeActivity"
+				  android:theme="@style/AppTheme">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="ch.ralena.extracredit.AgeActivity"/>
 		</activity>
 	</application>
 
